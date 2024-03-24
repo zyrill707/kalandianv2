@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yes</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+    .cont {
+      font-size: 12px;
+    }
+    .candle {
+      width: 400px;
+      height: 1000px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 1%;
+      background-image: url('rotate.gif');
+      display: none;
+    }
+    .candle img {
+      width: 110px;
+      height: 100px;
+      position: absolute;
+      left: 35%;
+      top: 12%;
+      transform: rotate(270deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <h3>YES!!! LOVE THANK YOU FOR ALL YOU DID I APPRECIATE IT SO MUCH YOU DESERVE THIS MWA</h3>
+    <p id="ugh"></p>
+    <button onclick="playAudio()">START</button>
+  </div>
+  <div id="candle" class="candle">
+    <img src="center.jpeg">
+  </div>
+  <div>
+    <audio id="bg_music">
+      <source src="chant.mp3" type="audio/mp3" looped>
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    function playAudio() {
+      var tex = document.getElementById("ugh").textContent = "Chanting on progress...";
+      var ritual = document.getElementById('candle');
+      if (ritual.style.display === "" || ritual.style.display === "none") {
+        ritual.style.display = "block";
+      } else {
+        ritual.style.display = "none";
+      }
+      var audio = document.getElementById("bg_music");
+      audio.play();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.cont{
+  display:flex;
+  justify-content: center;
+  position:absolute;
+  top:15%;
+  left:17%;
+}
+.contImg img{
+  width:150px;
+  height: 120px;
+  position:absolute;
+  left:40%;
+}
+.contYes{
+  display:flex;
+  justify-content:center;
+  position: absolute;
+  top:30%;
+  left:17%;
+}
+.contNo{
+  display:flex;
+  justify-content:center;
+  position: absolute;
+  top:1%;
+  bottom:1%;
+  left:190%;
+}
+.contYes button,
+.contNo button{
+  padding:20px 30px;
+  border-radius:3px;
+  border:1px solid gray;
+  font-weight: bold;
+  background: linear-gradient(134deg, red, pink, red);
+  box-shadow: 0px 2px 5px black;
+}

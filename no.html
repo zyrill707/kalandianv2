@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>No</title>
+  <style>
+  .cont{
+    font-size:20px;
+  }
+  .yamete{
+    display:none;
+  }
+    .contImg img{
+      width:150px;
+      transform: rotate(270deg);
+      position:absolute;
+      top:20%;
+      left:30%;
+    }
+    .gif1 img{
+      width:100px;
+      position: absolute;
+      top:35%;
+      left:15%;
+    }
+    .gif2 img{
+      width:100px;
+      position: absolute;
+      top:21%;
+      left:20%;
+    }
+    .gif3 img{
+      width:100px;
+      position:absolute;
+      left:60%;
+    }
+    .bianca img{
+      width:150px;
+      transform:rotate(270deg);
+      position:absolute;
+      top:56%;
+      left:32%;
+    }
+    .gif4 img{
+      width:100px;
+      position: absolute;
+      top:68%;
+      left:20%;
+    }
+    .gif5 img{
+      width:100px;
+      position: absolute;
+      top:47%;
+      left:36%;
+    }
+    .gif6 img{
+      width:100px;
+      position: absolute;
+      top:68%;
+      left:60%;
+    }
+  </style>
+</head>
+<body>
+  <div class='cont'>
+    <h3>NO:( Grabe ka dinurog mo akin kasingkasing </h3>
+    <p id="ugh"></p>
+    <button style="position:absolute; top:18%;" onclick="playAudio()">Punishment</button>
+  </div>
+  <div id="yamete" class="yamete">
+  <div class="contImg">
+    <img src="bianca.png">
+  </div>
+  <div class="gif1">
+    <img src="no.gif">
+  </div>
+  <div class="gif2">
+    <img src="no2.gif">
+  </div>
+  <div class="gif3">
+    <img src="no3.gif">
+  </div>
+  <div class="bianca">
+    <img src='bianca2.jpeg'>
+  </div>
+  <div class="gif4">
+    <img src="nov2.gif">
+  </div>
+  <div class="gif5">
+    <img src="nov3.gif">
+  </div>
+  <div class="gif6">
+    <img src="nov4.gif">
+  </div>
+  </div>
+  <audio id="bg_music">
+      <source src="Doksli Chinese Beaver Sad Meme...(Chinese Sad Beaver Original Video).mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+    function playAudio() {
+      var tex = document.getElementById("ugh").textContent = "Konsensya on progress...";
+      var ritual = document.getElementById('yamete');
+      if (ritual.style.display === "" || ritual.style.display === "none") {
+        ritual.style.display = "block";
+      } else {
+        ritual.style.display = "none";
+      }
+      var audio = document.getElementById("bg_music");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
